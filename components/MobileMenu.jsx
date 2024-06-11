@@ -33,11 +33,11 @@ const MobileMenu = () => {
           </Link>
         </li>
         <li>
-          <Link href="/signIn">
+          <div>
             <a className="text-gray-900 hover:text-blue-700 font-spline transition duration-300 flex items-center">
               <FaSignInAlt className="mr-2" /> Login
             </a>
-          </Link>
+          </div>
         </li>
         <li>
           <Link href="/createAccount">

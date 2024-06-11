@@ -41,16 +41,16 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden lg:flex flex-row basis-1/4 space-x-6 justify-end items-center">
-          <Link href="/signIn" passHref>
+          <div onClick={()=>window.location.href = 'http://localhost:5173/signIn'}>
             <span className="text-gray-900 hover:text-blue-700 font-spline transition duration-300 flex items-center cursor-pointer">
               <FaSignInAlt className="mr-2" /> Login
             </span>
-          </Link>
-          <Link href="/createAccount" passHref>
+          </div>
+          <div onClick={()=>window.location.href = 'http://localhost:5173/createAccount'}>
             <span className="bg-blue-700 text-white px-4 py-2 font-spline rounded-md hover:bg-blue-800 transition duration-300 flex items-center cursor-pointer">
               <FaUser className="mr-2" /> Signup
             </span>
-          </Link>
+          </div>
         </div>
 
         <div className="lg:hidden">
