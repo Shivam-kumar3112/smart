@@ -21,7 +21,17 @@ const cardVariants = {
 
 const InstitutionsSection = () => {
   const router = useRouter();
+  const sendEducationParam = () => {
+    // Perform any logout logic here, e.g., clearing authentication tokens, etc.
+
+    // Construct the URL with query parameters
+    const url = new URL('http://localhost:5173/signUp');
+    url.searchParams.append('userType', 'educational');
   
+
+    // Redirect to the URL with parameters
+    window.location.href = url.toString();
+  };
   return (
     <motion.div 
       initial="offscreen" 
@@ -85,7 +95,7 @@ const InstitutionsSection = () => {
           <motion.div 
             whileHover={{ scale: 1.05 }} 
             className="flex items-center justify-center cursor-pointer self-start lg:self-start w-2/3 px-4 py-2 mt-9 text-sm text-white bg-sky-500 rounded-md border border-sky-500 transition-transform duration-300"
-            onClick={() => router.push('/signUp', { state: { activeTab: 'educational' } })}
+            onClick={sendEducationParam}
           >
             <span>Enhance Academic Assessment</span>
             <FaArrowRight className="ml-2" />

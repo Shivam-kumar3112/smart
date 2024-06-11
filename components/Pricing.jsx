@@ -70,8 +70,8 @@ const Pricing = () => {
               </div>
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                href="/createAccount"
-                className="bg-sky-600 text-white px-4 py-2 rounded-md flex items-center justify-center transition-transform duration-300 mt-auto"
+                onClick={()=>window.location.href = 'http://localhost:5173/createAccount'}
+                className="bg-sky-600 text-white px-4 py-2 rounded-md flex items-center justify-center transition-transform duration-300 mt-auto cursor-pointer"
               >
                 <span className='font-spline'>Get Started</span>
                 <FaArrowRight className="ml-2" />

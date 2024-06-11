@@ -31,9 +31,9 @@ const Hero = () => {
           >
             Gain confidence and improve performance with precise feedback. Our platform leverages advanced technology to enhance interview and evaluation processes. Prepare smarter and excel with our AI-powered assessment solutions.
           </motion.p>
-          <Link href="/createAccount" className="bg-blue-700 text-white px-6 py-3 mt-6 font-spline text-sm rounded-md hover:bg-blue-800 transition duration-300 flex items-center max-w-max">
+          <span  onClick={()=>window.location.href = 'http://localhost:5173/createAccount'} className="bg-blue-700 text-white px-6 py-3 mt-6 font-spline text-sm rounded-md hover:bg-blue-800 transition duration-300 flex items-center max-w-max">
             Get Started with SmartGrader <FaArrowRight className="ml-2" />
-          </Link>
+          </span>
         </div>
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
